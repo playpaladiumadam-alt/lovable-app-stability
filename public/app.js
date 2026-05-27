@@ -286,7 +286,7 @@ function openModal(m) {
       if (det.streamUrl && playerWrapper) {
         playerWrapper.innerHTML = `
           <div class="mplayer-container">
-            <iframe src="${escapeHtml(det.streamUrl)}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen="true"></iframe>
+            <iframe src="${escapeHtml(det.streamUrl)}" allow="autoplay; encrypted-media; fullscreen" allowfullscreen="true" referrerpolicy="no-referrer"></iframe>
             <a href="https://discord.gg/Qazbbb7ub9" target="_blank" class="modal-discord-float" title="Discord">
               <img src="/discord_btn.png" alt="Discord" />
             </a>
