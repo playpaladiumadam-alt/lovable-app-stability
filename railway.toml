@@ -1,0 +1,15 @@
+# Railway config — force EU region (target is .ru, US datacenter IPs get blocked more often)
+[build]
+builder = "DOCKERFILE"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+# Use the /health endpoint that does NOT trigger a scrape, so the healthcheck
+# never kills your dyno while it's still warming up.
+healthcheckPath = "/health"
+healthcheckTimeout = 300
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 5
+
+# Pick the EU region in Railway dashboard:
+# Project → Settings → Region → "europe-west4" (Amsterdam)
