@@ -1,0 +1,21 @@
+{
+  "name": "cccv-livefoot",
+  "version": "1.0.0",
+  "module": "server.mjs",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "playwright": "^1.60.0"
+  }
+}
