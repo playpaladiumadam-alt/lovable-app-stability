@@ -1,6 +1,7 @@
 {
-  "name": "/dev-server",
-  "module": "index.ts",
+  "name": "cccv-livefoot",
+  "version": "1.0.0",
+  "module": "server.mjs",
   "type": "module",
   "private": true,
   "scripts": {
